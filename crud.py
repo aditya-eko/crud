@@ -1,36 +1,10 @@
 mahasiswa=["eko","agus"]
 
-def tambah(up):
-    return mahasiswa.insert(9,up)
+masukan=str(input("masukan nama"))
 
-def kurang(up):
-    return mahasiswa.pop(up)
-
-
-def edit(up):
-    mahasiswa[0]=up
-    return mahasiswa
-
-def tampil():
-    for i in (mahasiswa):
-        print("nama mahasiswa adalah",i)
+def tambah():
+    return mahasiswa.append(masukan)
 
 
-# menambahkan item dengan menggunakan fungsi
-tambah("aditya")
+tambah()
 print(mahasiswa)
-print(mahasiswa.index("eko"))
-
-
-# mengurangi item dengan fungsi
-kurang(1)
-print(mahasiswa)
-
-# edit dengan menggunakan fungsi
-
-edit("aldi")
-print(mahasiswa)
-
-# menampilkan mahasiswa
-
-tampil()
